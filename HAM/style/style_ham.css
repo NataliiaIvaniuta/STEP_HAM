@@ -103,12 +103,6 @@ body {
     color: #18cfab;
 }
 
-.menu {
-    display: flex;
-    justify-content: space-evenly;
-    position: relative
-}
-
 .site-menu {
     width: 700px;
     display: flex;
