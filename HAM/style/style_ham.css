@@ -157,12 +157,12 @@ input {
 }
 
 .top_parallax {
-    height: 1012px;
     background-image: url('../images/section-1(header).jpg');
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .slogan {
+    padding: 366px 0 244px;
     display: flex;
     flex-direction: column;
 }
@@ -675,8 +675,7 @@ input {
     width: 66px;
     height: 68px;
 }
-
-.datebox:hover {
+.post:hover .datebox {
     background-color: #18cfab;
 }
 
@@ -685,8 +684,7 @@ input {
     text-align: center;
     color: rgba(113, 113, 113, 255);
 }
-
-.caption_title:hover {
+.post:hover .caption_title {
     color: rgba(24, 207, 171, 255);
 }
 
@@ -703,6 +701,7 @@ input {
     border-left: 1px solid #bfc1c2;
     padding-left: 15px;
 }
+
 
 
 /*//FEEDBACKS//*/
