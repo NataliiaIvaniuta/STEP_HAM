@@ -238,7 +238,7 @@ input {
     font: 20px bold;
 }
 
-.benefits > div:nth-child(2n+1) {
+.benefit:nth-child(odd) {
     width: 25%;
     background-color: #1c2a33;
     border-top: 7px solid #18cfab;
@@ -246,28 +246,27 @@ input {
 
 }
 
-.benefits > div:nth-child(2n) {
+.benefit:nth-child(even) {
     width: 25%;
     background-color: #18cfab;
     border-top: 7px solid white;
     color: white;
 }
 
-.benefits > div {
+.benefit {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.benefits > div:nth-child(2n) > p {
+.themes:nth-child(even) {
     margin-top: 59px;
 }
 
-.benefits > div:nth-child(2n+1) > p {
+.themes:nth-child(odd) {
     margin-top: 49px;
 }
-
 /*/////*/
 
 .heading_h2 {
@@ -291,14 +290,13 @@ input {
 }
 
 .tabs {
+    display: flex;
     background-color: #fff;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
     margin-bottom: 25px;
 }
 
 .tab {
-    display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     background-color: #f8fcfe;
@@ -309,12 +307,8 @@ input {
     text-align: center;
 }
 
-.tab-content-img {
-    float: left;
-    margin-right: 20px;
-}
-
 .tab-content-img img {
+    margin-right: 20px;
     width: 194px;
     height: 139px;
 }
@@ -337,6 +331,8 @@ input {
 .tab.active:after {
     content: "";
     position: absolute;
+    left:50%;
+    transform: translate(-50%);
     display: inline-block;
     border: 12px solid transparent;
     bottom: -23px;
@@ -354,7 +350,7 @@ input {
 }
 
 .tabs-content .tab-content.active {
-    display: block;
+    display: flex;
 }
 
 
