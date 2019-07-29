@@ -381,13 +381,13 @@ input {
 
 /*//JUST BUY MIDDLE SECTION//*/
 .middle_parallax {
-    height: 476px;
     background-image: url('../images/section-2.jpg');
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
 }
 
 .middle_text {
+    padding: 128px;
     display: flex;
     align-items: center;
     flex-direction: column;
